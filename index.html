@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saswat | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: linear-gradient(135deg, #0a0f3c, #8a0303);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 1.5em;
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 15px rgba(255, 0, 70, 0.8);
+    }
+
+    header h1, footer p {
+      color: #ffffff;
+      text-shadow: 0 0 8px #ff0040, 0 0 15px #00ccff;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 0.5em;
+    }
+
+    nav a {
+      color: #00ffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff007f;
+      text-shadow: 0 0 10px #ff007f;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      padding: 2em;
+      gap: 1.5em;
+      justify-content: center;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 1.5em;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 20, 147, 0.7);
+    }
+
+    .box h2 {
+      color: #00ffff;
+      margin-bottom: 0.8em;
+      text-shadow: 0 0 8px #ff0040;
+    }
+
+    .box p {
+      font-size: 0.95em;
+      opacity: 0.9;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 1em;
+    }
+
+    .skill-tag {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 0.9em;
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      background: rgba(255, 20, 147, 0.2);
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 0, 128, 0.6);
+    }
+
+    footer {
+      padding: 1em;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+      }
+
+      .box {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+
+      header, footer {
+        padding: 0.8em;
+      }
+
+      .box {
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Saswat Rath | Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Skills</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="box">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Saswat — a first-year AIML student passionate about AI, coding, and creative problem-solving. I love
+        building clean, responsive designs. Passionate about Artificial Intelligense, 
+        currently exploring Generative AI and cloud computing
+      </p>
+    </section>
+
+    <section class="box">
+      <h2>Projects</h2>
+      <p>
+        ✦ Basic Arithmetic Calculator Using C<br>
+        ✦ Responsive Portfolio Website<br>
+        ✦ Student Management System(used php, SQL)<br>
+        ✦ Console-Based calculator in Java
+        ✦ Enquiry Form (Mini Web Project)-Under MIT license.
+      </p>
+    </section>
+
+    <section class="box">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill-tag">C(Mid-level programmer)</span>
+        <span class="skill-tag">C++(Basic)</span>
+        <span class="skill-tag">Java(Basic)</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">Python (Basic)</span>
+      </div>
+    </section>
+    
+    <section class="box">
+      <h2>Achievements</h2>
+      <p>
+        •<a href = "https://www.geeksforgeeks.org/user/saswatignsc/" target = "_blank" style="color:#fff700;text-decoration:none;">Top 800 in college coding challenge among 7500 users</a><br>
+        <br>
+        •<a href = "https://github.com/Saswat-Iare25" target = "_blank" style="color:#fff700;text-decoration:none;">Completed 3+ mini projects<br></a><br>
+        <P>• Certified <a href = "https://www.hackerrank.com/certificates/afdc71618cfb" style="color:#00ff0d;text-decoration:none;" target="_blank">Java(Basic)-Hackerrank</a></p><br>
+        <p>• Certified <a href = "https://www.hackerrank.com/certificates/f204e5c18c3f" style="color:#00ff0d;text-decoration:none;" target="_blank">Python(Basic)-Hackerrank</a></p>
+
+      <!--  • Ongoing ML research on dataset training optimization -->
+      </p>
+    </section>
+
+    <section class="box">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:saswat.iare25@gmail.com" style="color:#00ffff;text-decoration:none;">saswat.iare25@gmail.com</a></p>
+      <p>LinkedIn: <a href="#" style="color:#00ffff;text-decoration:none;">linkedin.com/in/saswat-rath</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Made by - Saswat Rath</p>
+  </footer>
+</body>
+</html
